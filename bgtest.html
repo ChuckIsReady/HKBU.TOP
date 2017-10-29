@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#daily_picture_container {
+		  height: 100vh;
+		  background-size: cover !important;
+		}
+		body {
+		  margin:0;
+		  padding:0;
+		}
+	</style>
+</head>
+<body>
+	<div id="daily_picture_container"></div>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+		$(function(){
+
+		    $.ajax({
+		        url: 'http://noapi.dorparasti.ir/api/scraps/e9baeceb-f353-4703-a84d-c9e3107bd90f',
+		        cache: false,
+		        dataType: 'json',
+		        success: function (data) {
+		        		console.log(data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg" );
+		            $("body").css("background", "#FFFFFF url(http://bing.com" + data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg"  + ") repeat-y 0 0");
+		        }
+		    });
+
+		});
+		</script>
+</body>
+</html>

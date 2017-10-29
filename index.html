@@ -6,9 +6,6 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<style>
-	*{
-		font-family: 'Microsoft YaHei';
-	}
 		.pannel{
 			    margin-top: 10px;
 			    background-color: rgba(255, 255, 255, 0.85);
@@ -19,28 +16,19 @@
 			    box-shadow: 0 15px 30px rgba(160,160,160,.9);
 			    min-height: 300px;
 		}
-		body,.bg{
+		body{
 			background-color: #000;
 			border: 0;
 			padding: 0;
+			background-position-x: center !important;
 
 		}
 		body{
-			width:100%;
+			font-family: Microsoft YaHei;
 			-webkit-user-select:none;
 			 -moz-user-select:none;
 			  -ms-user-select:none; 
 			  user-select:none;
-		}
-		.bg{
-			z-index: 0;
-			position: fixed;
-			z-index: 0;
-			height: 100%;
-			left: 50%;
-			top: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
 		}
 		.app-style {
 		   display: block;
@@ -131,8 +119,6 @@ a:hover{
 
 </head>
 <body>
-	<img src="https://api.dujin.org/bing/1920.php" alt="" class="bg">
-	<!-- <img src="" alt="" class="bg"> -->
 	<div class="container">
 		<div class="row">
 			<div class=" title  text-cente text-light font-weight-bold col-xl-12">
@@ -160,5 +146,20 @@ a:hover{
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+	$(function(){
+
+		    $.ajax({
+		        url: 'http://noapi.dorparasti.ir/api/scraps/e9baeceb-f353-4703-a84d-c9e3107bd90f',
+		        cache: false,
+		        dataType: 'json',
+		        success: function (data) {
+		        		console.log(data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg" );
+		            $("body").css("background", "#FFFFFF url(http://bing.com" + data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg"  + ") no-repeat");
+		        }
+		    });
+
+		});
+</script>
 </body>
 </html>
