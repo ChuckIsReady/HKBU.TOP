@@ -5,6 +5,9 @@
 	<title>HKBU One Step</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<style>
+	*{
+		font-family: 'Microsoft YaHei';
+	}
 		.pannel{
 			    margin-top: 10px;
 			    background-color: rgba(255, 255, 255, 0.85);
@@ -64,17 +67,33 @@
 	    margin-top: 5px;
 }
 .siteimg {
-    width: 32px;
-    height: 32px;
-    margin: 13px;
+	width: 48px;
+	height: 48px;
+	margin: 3px;
 }
 .site_bup {
-    background-image: url();
-    background-position: 0 0;
+      background-image: url(img/BUP.png);
+    background-size: 48px 48px;
+}
+.site_moddle{
+    background-image: url(img/moodle.png);
+    background-size: 48px 48px;
+}
+.site_lib{
+    background-image: url(img/LIB.png);
+    background-size: 48px 48px;
+}
+.site_libf{
+    background-image: url(img/LIBF.png);
+    background-size: 48px 48px;
 }
 .title{
 	font-size: 50px;
 	text-align: center;
+}
+
+a:hover{
+	text-decoration: none;
 }
 
 	</style>
@@ -91,8 +110,9 @@
 		<div class="row">
 		<div class="pannel col-xl-12">
 			<a title="" sid="3000" class="topsite_a" href="https://iss.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">BUPort</div></a>
-			<a title="" sid="3000" class="topsite_a" href="https://iss.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">图书馆订房</div></a>
-			<a title="" sid="3000" class="topsite_a" href="https://buelearning.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">Moodle</div></a>
+			<a title="" sid="3000" class="topsite_a" href="https://buelearning.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_moddle"></div></div><div class="sitename">Moodle</div></a>
+			<a title="" sid="3000" class="topsite_a" href="" target="_blank"><div class="sitebg"><div class="siteimg site_libf"></div></div><div class="sitename">图书馆订房</div></a>
+			<a title="" sid="3000" class="topsite_a" href="" target="_blank"><div class="sitebg"><div class="siteimg site_lib"></div></div><div class="sitename">图书馆</div></a>
 		</div>
 		</div>
 	</div>
