@@ -26,6 +26,10 @@
 			padding: 0;
 			position: fixed;
 			z-index: 0;
+			-webkit-user-select:none;
+			 -moz-user-select:none;
+			  -ms-user-select:none; 
+			  user-select:none;
 		}
 		.topsite_a {
 		   display: block;
@@ -90,13 +94,21 @@
 .title{
 	font-size: 50px;
 	text-align: center;
-}
-
+	text-shadow: 5px 7px 10px rgba(160,160,160,.9);
+	}
 a:hover{
 	text-decoration: none;
 }
-
+.footer{
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(255,255,255,0.3);
+	color: #ccc;
+	border-radius: 10px;
+	      user-select: initial;
+}
 	</style>
+}
 </head>
 <body>
 	<img src="https://api.dujin.org/bing/1920.php" alt="" class="bg">
@@ -111,9 +123,16 @@ a:hover{
 		<div class="pannel col-xl-12">
 			<a title="" sid="3000" class="topsite_a" href="https://iss.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">BUPort</div></a>
 			<a title="" sid="3000" class="topsite_a" href="https://buelearning.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_moddle"></div></div><div class="sitename">Moodle</div></a>
-			<a title="" sid="3000" class="topsite_a" href="" target="_blank"><div class="sitebg"><div class="siteimg site_libf"></div></div><div class="sitename">图书馆订房</div></a>
-			<a title="" sid="3000" class="topsite_a" href="" target="_blank"><div class="sitebg"><div class="siteimg site_lib"></div></div><div class="sitename">图书馆</div></a>
+			<a title="" sid="3000" class="topsite_a" href="http://library.hkbu.edu.hk/forms/booking_index.html" target="_blank"><div class="sitebg"><div class="siteimg site_libf"></div></div><div class="sitename">图书馆订房</div></a>
+			<a title="" sid="3000" class="topsite_a" href="http://library.hkbu.edu.hk/" target="_blank"><div class="sitebg"><div class="siteimg site_lib"></div></div><div class="sitename">图书馆</div></a>
 		</div>
+		</div>
+		<div class="row">
+			<footer class="footer  col-xl-7">
+				<div class="row"><div class="show-part col-xl-5"> Create by Chuck </div><div class="hide-part col-xl-7">如果有想添加的网站请发送到 Chengbo@life.hkbu.edu.hk</div></div>
+				
+				
+			</footer>
 		</div>
 	</div>
 	
