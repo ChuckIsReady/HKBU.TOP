@@ -20,18 +20,28 @@
 		}
 		body,.bg{
 			background-color: #000;
-			width: 100%;
 			border: 0;
-			margin: 0;
 			padding: 0;
-			position: fixed;
-			z-index: 0;
+
+		}
+		body{
+			width:100%;
 			-webkit-user-select:none;
 			 -moz-user-select:none;
 			  -ms-user-select:none; 
 			  user-select:none;
 		}
-		.topsite_a {
+		.bg{
+			z-index: 0;
+			position: fixed;
+			z-index: 0;
+			height: 100%;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		.app-style {
 		   display: block;
 		   float: left;
 		   width: 110px;
@@ -78,18 +88,16 @@
 .site_bup {
       background-image: url(img/BUP.png);
     background-size: 48px 48px;
+    background-repeat: no-repeat;
 }
 .site_moddle{
     background-image: url(img/moodle.png);
-    background-size: 48px 48px;
 }
 .site_lib{
     background-image: url(img/LIB.png);
-    background-size: 48px 48px;
 }
 .site_libf{
     background-image: url(img/LIBF.png);
-    background-size: 48px 48px;
 }
 .title{
 	font-size: 50px;
@@ -100,10 +108,9 @@ a:hover{
 	text-decoration: none;
 }
 .footer{
-	position: fixed;
-	bottom: 0;
 	background-color: rgba(255,255,255,0.3);
 	color: #ccc;
+	margin:0 auto;
 	border-radius: 10px;
 	      user-select: initial;
 }
@@ -119,16 +126,16 @@ a:hover{
 				HKBU.TOP
 			</div>
 		</div>
-		<div class="row">
+		<div class="row ">
 		<div class="pannel col-xl-12">
-			<a title="" sid="3000" class="topsite_a" href="https://iss.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">BUPort</div></a>
-			<a title="" sid="3000" class="topsite_a" href="https://buelearning.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_moddle"></div></div><div class="sitename">Moodle</div></a>
-			<a title="" sid="3000" class="topsite_a" href="http://library.hkbu.edu.hk/forms/booking_index.html" target="_blank"><div class="sitebg"><div class="siteimg site_libf"></div></div><div class="sitename">图书馆订房</div></a>
-			<a title="" sid="3000" class="topsite_a" href="http://library.hkbu.edu.hk/" target="_blank"><div class="sitebg"><div class="siteimg site_lib"></div></div><div class="sitename">图书馆</div></a>
+			<a title="" sid="3000" class="app-style" href="https://iss.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_bup"></div></div><div class="sitename">BUPort</div></a>
+			<a title="" sid="3000" class="app-style" href="https://buelearning.hkbu.edu.hk" target="_blank"><div class="sitebg"><div class="siteimg site_moddle"></div></div><div class="sitename">Moodle</div></a>
+			<a title="" sid="3000" class="app-style" href="http://library.hkbu.edu.hk/forms/booking_index.html" target="_blank"><div class="sitebg"><div class="siteimg site_libf"></div></div><div class="sitename">图书馆订房</div></a>
+			<a title="" sid="3000" class="app-style" href="http://library.hkbu.edu.hk/" target="_blank"><div class="sitebg"><div class="siteimg site_lib"></div></div><div class="sitename">图书馆</div></a>
 		</div>
 		</div>
-		<div class="row">
-			<footer class="footer  col-xl-7">
+		<div class="row fixed-bottom">
+			<footer class="footer  col-xl-10">
 				<div class="row"><div class="show-part col-xl-5"> Create by Chuck </div><div class="hide-part col-xl-7">如果有想添加的网站请发送到 Chengbo@life.hkbu.edu.hk</div></div>
 				
 				
