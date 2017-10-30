@@ -154,12 +154,13 @@ a:hover{
 		        cache: false,
 		        dataType: 'json',
 		        success: function (data) {
-		        		console.log(data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg" );
+
 		            $("body").css("background", "#FFFFFF url(http://bing.com" + data.Paths[0].substr(0, data.Paths[0].length - 12)+"1920x1080.jpg"  + ") no-repeat");
 		        }
 		    });
 
 		});
+	console.log("%c  ", "line-height:250px;background: url('http://hkbu.top/img/taofan233.jpg') no-repeat 0px 0px;");
 </script>
 </body>
 </html>
